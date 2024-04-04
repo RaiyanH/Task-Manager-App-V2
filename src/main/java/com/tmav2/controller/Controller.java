@@ -29,7 +29,7 @@ public class Controller {
             return new ResponseEntity<>(taskCreated, HttpStatus.OK);
     }
 
-    @GetMapping
+    @GetMapping("/GetListOfTasks")
     public ResponseEntity<List<Task>> getListOfTasks(){
 
         try {
